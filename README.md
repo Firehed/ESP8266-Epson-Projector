@@ -1,5 +1,5 @@
-# ESP8266-Optoma-Projector
-Control an Optoma projector over wifi with an ESP8266
+# ESP8266-Epson-Projector
+Control an Epson projector over wifi with an ESP8266
 
 ## Goals
 
@@ -20,7 +20,7 @@ Response: `text/plain`
 
 Example:
 
-`curl optoma-projector.local`
+`curl epson-projector.local`
 
 ```
 OKa
@@ -44,7 +44,7 @@ Response: `text/plain`
 
 Example:
 
-`curl -d state=on optoma-projector.local`
+`curl -d state=on epson-projector.local`
 
 ```
 P
@@ -77,7 +77,7 @@ Pressing the flash button before/during programming was not necessary with the w
 Follow [this guide](https://learn.adafruit.com/adafruit-huzzah-esp8266-breakout/using-arduino-ide) to set up Arduino IDE to speak to the ESP8266 boards (but select NodeMCU instead of the Adafruit board).
 
 
-Upon setup, it will attempt to broadcast itself at `optoma-projector.local`.
+Upon setup, it will attempt to broadcast itself at `epson-projector.local`.
 Depending on your network and DNS configuration, this may not resolve.
 To find the device's IP, the easiest approach is to probably just check your router's DHCP leases.
 It should print to the serial console as well, but that will be inaccessible when connected to the switch (so make note of it when programming via the Arduino IDE).
